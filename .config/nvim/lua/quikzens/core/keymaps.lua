@@ -5,7 +5,7 @@ local keymap = vim.keymap
 keymap.set("n", "<leader>w", ":w<cr>") -- save single buffer
 keymap.set("n", "<leader>q", ":q<cr>") -- quit
 keymap.set("n", "<leader>sq", ":wqall<cr>") -- save (one or multiple buffer) and quit
-keymap.set("n", "<leader>e", ":NvimTreeToggle<cr>") -- quickly open the nvim tree directory browser
+keymap.set("n", "<leader>e", ":Neotree toggle<cr>") -- quickly open the neo tree directory browser
 keymap.set("i", "jk", "<ESC>") -- easier to get out from 'insert' mode
 
 -- automatically yank/copy text to clipboard
@@ -20,7 +20,11 @@ keymap.set("n", "d", '"+d')
 keymap.set("v", "p", '"+p')
 keymap.set("n", "p", '"+p')
 
-keymap.set("n", "x", '"_x')
+keymap.set("n", "x", '"_x') -- prevent 'x' character to a register
+keymap.set("n", "'", ",") -- because ',' being used as leader key
+
+keymap.set("n", "<C-d>", "<C-d>zz")
+keymap.set("n", "<C-u>", "<C-u>zz")
 
 -- plugin keymaps
 
@@ -29,4 +33,6 @@ keymap.set("n", "<leader>ff", "<cmd>Telescope find_files<cr>") -- find files wit
 keymap.set("n", "<leader>fs", "<cmd>Telescope live_grep<cr>") -- find string in current working directory as you type
 keymap.set("n", "<leader>fc", "<cmd>Telescope grep_string<cr>") -- find string under cursor in current working directory
 keymap.set("n", "<leader>fb", "<cmd>Telescope buffers<cr>") -- list open buffers in current neovim instance
-keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tags
+keymap.set("n", "<leader>fh", "<cmd>Telescope help_tags<cr>") -- list available help tag
+keymap.set("n", "<leader>fd", "<cmd>Telescope diagnostics<cr>") -- list diagnotics in current working directory
+keymap.set("n", "<leader>fo", "<cmd>Telescope lsp_document_symbols<cr>")

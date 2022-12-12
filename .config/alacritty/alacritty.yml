@@ -51,7 +51,7 @@ window:
     y: 0
 
   # Spread additional padding evenly around the terminal content.
-  # dynamic_padding: false
+  # dynamic_padding: true
 
   # Window decorations
   #
@@ -99,7 +99,7 @@ window:
   # Override the variant of the GTK theme/Wayland client side decorations.
   # Commonly supported values are `dark` and `light`. Set this to `None` to use
   # the default theme variant.
-  #decorations_theme_variant: None
+  decorations_theme_variant: None
 
 #scrolling:
 # Maximum number of lines in the scrollback buffer.
@@ -158,14 +158,14 @@ font:
   #style: Bold Italic
 
   # Point size
-  size: 10.5
+  size: 10
 
   # Offset is the extra space around each character. `offset.y` can be thought
   # of as modifying the line spacing, and `offset.x` as modifying the letter
   # spacing.
   offset:
     x: 0
-    y: 3
+    y: 4
 
   # Glyph offset determines the locations of the glyphs within their cells with
   # the default being at the bottom. Increasing `x` moves the glyph to the

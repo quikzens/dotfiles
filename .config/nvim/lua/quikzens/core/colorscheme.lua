@@ -1,5 +1,8 @@
-local status, _ = pcall(vim.cmd, "colorscheme melange")
-if not status then
-	print("Colorscheme not found!")
-	return
-end
+vim.g.ayucolor = "mirage" -- mirage, light, dark
+pcall(vim.cmd, "colorscheme ayu")
+
+vim.cmd([[
+highlight EndOfBuffer guifg=bg
+set fillchars+=vert:\│
+hi vertsplit guifg=#353535 guibg=bg gui=NONE
+]])

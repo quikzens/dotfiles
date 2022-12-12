@@ -13,12 +13,13 @@ vim.opt.swapfile = false
 vim.opt.splitright = true
 vim.opt.updatetime = 100
 vim.opt.timeoutlen = 500
-vim.opt.wrap = false
+vim.opt.wrap = true
 vim.opt.breakindent = true
 vim.opt.relativenumber = true
-vim.opt.showmode = false -- default mode information is unnecessary because we have lualine plugin
+vim.opt.cursorline = true
+vim.opt.showmode = false -- default mode information is unnecessary because we use lualine plugin
 vim.opt["guicursor"] = "i:block"
 
 -- netrw
 vim.g.netrw_banner = 0
-vim.g.netrw_bufsettings = 'noma nomod nu nobl nowrap ro'
+vim.g.netrw_bufsettings = "noma nomod nu nobl nowrap ro"
