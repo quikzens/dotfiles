@@ -20,6 +20,8 @@ keymap.set("n", "d", '"+d')
 keymap.set("v", "p", '"+p')
 keymap.set("n", "p", '"+p')
 
+keymap.set("v", "y", 'my"+y`y')
+
 keymap.set("n", "x", '"_x') -- prevent 'x' character to a register
 keymap.set("n", "'", ",") -- because ',' being used as leader key
 

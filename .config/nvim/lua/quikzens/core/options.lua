@@ -14,6 +14,7 @@ vim.opt.splitright = true
 vim.opt.updatetime = 100
 vim.opt.timeoutlen = 500
 vim.opt.wrap = true
+vim.opt.syntax = "on"
 vim.opt.breakindent = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true

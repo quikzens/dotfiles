@@ -1,8 +1,6 @@
-vim.g.ayucolor = "mirage" -- mirage, light, dark
-pcall(vim.cmd, "colorscheme ayu")
-
+vim.opt.background = "dark"
 vim.cmd([[
-highlight EndOfBuffer guifg=bg
-set fillchars+=vert:\│
-hi vertsplit guifg=#353535 guibg=bg gui=NONE
+	colorscheme oxocarbon
+	highlight EndOfBuffer guifg=bg
+	set fillchars+=vert:\│
 ]])

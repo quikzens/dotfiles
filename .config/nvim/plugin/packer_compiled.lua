@@ -149,6 +149,11 @@ _G.packer_plugins = {
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
+  minimalist = {
+    loaded = true,
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/minimalist",
+    url = "https://github.com/dikiaap/minimalist"
+  },
   ["neo-tree.nvim"] = {
     loaded = true,
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/neo-tree.nvim",
@@ -200,6 +205,11 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
+  },
+  ["oxocarbon.nvim"] = {
+    loaded = true,
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
+    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
