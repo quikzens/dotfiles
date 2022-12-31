@@ -32,15 +32,16 @@ return packer.startup(function(use)
 	use("nvim-lua/plenary.nvim")
 
 	-- colorscheme
-	use("ayu-theme/ayu-vim")
-	use("dikiaap/minimalist")
-	use("nyoom-engineering/oxocarbon.nvim")
+	use("Yazeed1s/minimal.nvim")
 
 	-- comment stuff easier
 	use("tpope/vim-commentary")
 
 	-- status line
 	use("nvim-lualine/lualine.nvim")
+
+	-- toggle terminal
+	use("akinsho/toggleterm.nvim")
 
 	-- fuzzy finding w/ telescope
 	use({ "nvim-telescope/telescope-fzf-native.nvim", run = "make" }) -- dependency for better sorting performance
@@ -94,6 +95,9 @@ return packer.startup(function(use)
 		end,
 	})
 
+	-- text object
+	use("nvim-treesitter/nvim-treesitter-textobjects")
+
 	-- auto closing
 	use("windwp/nvim-autopairs") -- autoclose parens, brackets, quotes, etc...
 	use({ "windwp/nvim-ts-autotag", after = "nvim-treesitter" }) -- autoclose tags
@@ -101,8 +105,9 @@ return packer.startup(function(use)
 	-- git integration
 	use("lewis6991/gitsigns.nvim") -- show line modifications on left hand side
 
-	-- lazygit integration
-	use("kdheepak/lazygit.nvim")
+	use("tpope/vim-repeat")
+	use("tpope/vim-surround")
+	use("ggandor/leap.nvim")
 
 	if packer_bootstrap then
 		require("packer").sync()

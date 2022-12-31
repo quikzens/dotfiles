@@ -79,11 +79,6 @@ _G.packer_plugins = {
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/LuaSnip",
     url = "https://github.com/L3MON4D3/LuaSnip"
   },
-  ["ayu-vim"] = {
-    loaded = true,
-    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/ayu-vim",
-    url = "https://github.com/ayu-theme/ayu-vim"
-  },
   ["cmp-buffer"] = {
     loaded = true,
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/cmp-buffer",
@@ -114,10 +109,10 @@ _G.packer_plugins = {
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/gitsigns.nvim",
     url = "https://github.com/lewis6991/gitsigns.nvim"
   },
-  ["lazygit.nvim"] = {
+  ["leap.nvim"] = {
     loaded = true,
-    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/lazygit.nvim",
-    url = "https://github.com/kdheepak/lazygit.nvim"
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/leap.nvim",
+    url = "https://github.com/ggandor/leap.nvim"
   },
   ["lspkind.nvim"] = {
     loaded = true,
@@ -149,10 +144,10 @@ _G.packer_plugins = {
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/mason.nvim",
     url = "https://github.com/williamboman/mason.nvim"
   },
-  minimalist = {
+  ["minimal.nvim"] = {
     loaded = true,
-    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/minimalist",
-    url = "https://github.com/dikiaap/minimalist"
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/minimal.nvim",
+    url = "https://github.com/Yazeed1s/minimal.nvim"
   },
   ["neo-tree.nvim"] = {
     loaded = true,
@@ -194,6 +189,11 @@ _G.packer_plugins = {
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/nvim-treesitter",
     url = "https://github.com/nvim-treesitter/nvim-treesitter"
   },
+  ["nvim-treesitter-textobjects"] = {
+    loaded = true,
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/nvim-treesitter-textobjects",
+    url = "https://github.com/nvim-treesitter/nvim-treesitter-textobjects"
+  },
   ["nvim-ts-autotag"] = {
     load_after = {},
     loaded = true,
@@ -205,11 +205,6 @@ _G.packer_plugins = {
     loaded = true,
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/nvim-web-devicons",
     url = "https://github.com/nvim-tree/nvim-web-devicons"
-  },
-  ["oxocarbon.nvim"] = {
-    loaded = true,
-    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/oxocarbon.nvim",
-    url = "https://github.com/nyoom-engineering/oxocarbon.nvim"
   },
   ["packer.nvim"] = {
     loaded = true,
@@ -231,10 +226,25 @@ _G.packer_plugins = {
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/telescope.nvim",
     url = "https://github.com/nvim-telescope/telescope.nvim"
   },
+  ["toggleterm.nvim"] = {
+    loaded = true,
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/toggleterm.nvim",
+    url = "https://github.com/akinsho/toggleterm.nvim"
+  },
   ["vim-commentary"] = {
     loaded = true,
     path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/vim-commentary",
     url = "https://github.com/tpope/vim-commentary"
+  },
+  ["vim-repeat"] = {
+    loaded = true,
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/vim-repeat",
+    url = "https://github.com/tpope/vim-repeat"
+  },
+  ["vim-surround"] = {
+    loaded = true,
+    path = "/home/febrianamir/.local/share/nvim/site/pack/packer/start/vim-surround",
+    url = "https://github.com/tpope/vim-surround"
   },
   ["vim-tmux-navigator"] = {
     loaded = true,

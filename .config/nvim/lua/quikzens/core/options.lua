@@ -14,11 +14,14 @@ vim.opt.splitright = true
 vim.opt.updatetime = 100
 vim.opt.timeoutlen = 500
 vim.opt.wrap = true
+vim.opt.hidden = true
 vim.opt.syntax = "on"
 vim.opt.breakindent = true
 vim.opt.relativenumber = true
 vim.opt.cursorline = true
 vim.opt.showmode = false -- default mode information is unnecessary because we use lualine plugin
+vim.opt.scrolloff = 8
+vim.opt.signcolumn = "yes"
 vim.opt["guicursor"] = "i:block"
 
 -- netrw
