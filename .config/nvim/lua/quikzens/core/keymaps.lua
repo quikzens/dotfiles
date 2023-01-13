@@ -4,7 +4,8 @@ local keymap = vim.keymap
 
 keymap.set("n", "<leader>w", ":w<cr>") -- save single buffer
 keymap.set("n", "<leader>q", ":q<cr>") -- quit
-keymap.set("n", "<leader>aw", ":wall<cr>") -- save all buffer
+keymap.set("n", "<leader>aw", ":wa<cr>") -- save all buffers
+keymap.set("n", "<leader>aq", ":qa<cr>") -- quit all windows
 keymap.set("n", "<leader>e", ":Neotree toggle<cr>") -- toggle file explorer
 keymap.set("i", "jk", "<ESC>") -- easier to get out from 'insert' mode
 

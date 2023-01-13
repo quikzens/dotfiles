@@ -3,6 +3,11 @@ if not setup then
 	return
 end
 
+local setup_commands, neotree_commands = pcall(require, "neo-tree.command")
+if not setup_commands then
+	return
+end
+
 -- disable netrw at the very start of your init.lua (strongly advised)
 vim.g.loaded_netrw = 1
 vim.g.loaded_netrwPlugin = 1
@@ -75,7 +80,7 @@ neotree.setup({
 	},
 	window = {
 		position = "left",
-		width = 30,
+		width = 35,
 		mapping_options = {
 			noremap = true,
 			nowait = true,
@@ -85,20 +90,21 @@ neotree.setup({
 				"toggle_node",
 				nowait = false, -- disable `nowait` if you have existing combos starting with this char that you want to use
 			},
-			["<2-LeftMouse>"] = "open",
-			["<cr>"] = "open",
-			["l"] = "open",
+			["<2-LeftMouse>"] = "open_with_window_picker",
+			["<cr>"] = "open_with_window_picker",
+			["l"] = "open_with_window_picker",
 			["<esc>"] = "revert_preview",
 			["P"] = { "toggle_preview", config = { use_float = true } },
-			["S"] = "open_split",
-			["s"] = "open_vsplit",
-			-- ["S"] = "split_with_window_picker",
-			-- ["s"] = "vsplit_with_window_picker",
+			-- ["S"] = "open_split",
+			-- ["s"] = "open_vsplit",
+			["S"] = "split_with_window_picker",
+			["s"] = "vsplit_with_window_picker",
 			["t"] = "open_tabnew",
 			-- ["<cr>"] = "open_drop",
 			-- ["t"] = "open_tab_drop",
-			["w"] = "open_with_window_picker",
+			-- ["w"] = "open_with_window_picker",
 			["C"] = "close_node",
+			["h"] = "close_node",
 			["z"] = "close_all_nodes",
 			["Z"] = "expand_all_nodes",
 			["a"] = {
@@ -158,7 +164,7 @@ neotree.setup({
 		follow_current_file = true, -- This will find and focus the file in the active buffer every
 		-- time the current file is changed while the tree is open.
 		group_empty_dirs = false, -- when true, empty folders will be grouped together
-		hijack_netrw_behavior = "open_current", -- netrw disabled, opening a directory opens neo-tree
+		hijack_netrw_behavior = "disabled", -- netrw disabled, opening a directory opens neo-tree
 		-- in whatever position is specified in window.position
 		-- "open_current",  -- netrw disabled, opening a directory opens within the
 		-- window like netrw would, regardless of window.position

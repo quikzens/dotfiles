@@ -6,16 +6,16 @@ end
 lualine.setup({
 	options = {
 		icons_enabled = true,
-		theme = "auto",
+		theme = "onedark",
 		component_separators = { left = "", right = "" },
 		section_separators = { left = "", right = "" },
 		disabled_filetypes = {
-			statusline = { "packer", "NvimTree", "neo-tree" },
-			winbar = {},
+			statusline = { "packer", "neo-tree" },
+			winbar = { "packer", "neo-tree", "toggleterm" },
 		},
 		ignore_focus = {},
 		always_divide_middle = true,
-		globalstatus = false,
+		globalstatus = true,
 		refresh = {
 			statusline = 1000,
 			tabline = 1000,
@@ -24,7 +24,15 @@ lualine.setup({
 	},
 	sections = {
 		lualine_a = { "mode" },
-		lualine_b = { "branch", "diff", "diagnostics" },
+		lualine_b = { "diff", "diagnostics" },
+		lualine_c = {},
+		lualine_x = {},
+		lualine_y = {},
+		lualine_z = {},
+	},
+	inactive_sections = {
+		lualine_a = {},
+		lualine_b = { "diff", "diagnostics" },
 		lualine_c = {
 			{
 				"filename",
@@ -36,16 +44,34 @@ lualine.setup({
 		lualine_y = {},
 		lualine_z = {},
 	},
-	inactive_sections = {
+	tabline = {},
+	winbar = {
 		lualine_a = {},
 		lualine_b = {},
-		lualine_c = { "filename" },
-		lualine_x = { "location" },
+		lualine_c = {
+			{
+				"filename",
+				file_status = true,
+				path = 1,
+			},
+		},
+		lualine_x = {},
 		lualine_y = {},
 		lualine_z = {},
 	},
-	tabline = {},
-	winbar = {},
-	inactive_winbar = {},
+	inactive_winbar = {
+		lualine_a = {},
+		lualine_b = {},
+		lualine_c = {
+			{
+				"filename",
+				file_status = true,
+				path = 1,
+			},
+		},
+		lualine_x = {},
+		lualine_y = {},
+		lualine_z = {},
+	},
 	extensions = {},
 })

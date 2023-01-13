@@ -22,6 +22,7 @@ vim.opt.cursorline = true
 vim.opt.showmode = false -- default mode information is unnecessary because we use lualine plugin
 vim.opt.scrolloff = 8
 vim.opt.signcolumn = "yes"
+vim.opt.splitbelow = true
 vim.opt["guicursor"] = "i:block"
 
 -- netrw
